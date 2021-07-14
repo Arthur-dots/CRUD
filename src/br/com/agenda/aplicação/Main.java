@@ -12,21 +12,21 @@ public class Main {
 		ContatoDAO contatoDAO = new ContatoDAO();
 		
 		
-		//Contato contato = new Contato();
-		//contato.setNome("Tâmara Victória ");
-		//contato.setIdade(21);
-		//contato.setDataCadastro(new Date());
+		Contato contato = new Contato();
+		contato.setNome("Tâmara Victória ");
+		contato.setIdade(21);
+		contato.setDataCadastro(new Date());
 		
 		//-Salva os contatos no banco.
-		//contatoDAO.save(contato);
+		contatoDAO.save(contato);
 		
 		//-Atualiza os contatos no banco.
-		//Contato c1 = new Contato();
-		//c1.setNome("Arthur Sales Pereora Neto");
-		//c1.setIdade(25);
-		//c1.setDataCadastro(new Date());
-		//c1.setId(1);//Posição no banco de dados.
-		//contatoDAO.update(c1);
+		Contato c1 = new Contato();
+		c1.setNome("Arthur Sales Pereora Neto");
+		c1.setIdade(25);
+		c1.setDataCadastro(new Date());
+		c1.setId(1);//Posição no banco de dados.
+		contatoDAO.update(c1);
 		
 		//Deleta o contato pelo ID
 		contatoDAO.deleteByID(2);

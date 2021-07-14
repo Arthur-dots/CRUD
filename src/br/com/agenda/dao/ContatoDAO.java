@@ -18,7 +18,7 @@ public class ContatoDAO {
 	 * c: Create (save)
 	 * r: Read   (List<Contato>)
 	 * u: Update (update)
-	 * d: Delete
+	 * d: Delete (deleById)
 	 */
 	
 	
@@ -69,7 +69,7 @@ public class ContatoDAO {
 		ResultSet rst = null;
 		
 		try {
-			conn = ConnectionFactory.createConnectionToMySQL();
+			conn= ConnectionFactory.createConnectionToMySQL();
 			
 			pstm= (PreparedStatement) conn.prepareStatement(sql);
 			
